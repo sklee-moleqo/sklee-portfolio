@@ -1,0 +1,19 @@
+{
+  "name": "sklee-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "실무에서 설계·구현한 프론트엔드 패턴을 회사 코드 없이 다시 작성한 포트폴리오 예제",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "test": "tsc && node --test dist/samples/jwt-refresh dist/samples/tenant-resolver dist/samples/ai-assist"
+  },
+  "devDependencies": {
+    "@tanstack/react-query": "^5.62.0",
+    "@types/node": "^20.17.0",
+    "@types/react": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
